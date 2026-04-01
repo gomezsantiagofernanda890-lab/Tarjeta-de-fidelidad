@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet's Grooming - Inicio</title>
+    <style>
+        :root { --verde: #4ab8a2; --turquesa: #00a8b5; --fondo: #f0f7ef; --oscuro: #333; }
+        body { font-family: 'Arial', sans-serif; background: var(--fondo); margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding-top: 20px; }
+        
+        .header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; align-items: center; padding: 0 20px; z-index: 1000; box-sizing: border-box; }
+        .logo-header { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--verde); overflow: hidden; display: flex; align-items: center; justify-content: center; background: #eee; margin-right: 15px; }
+        .logo-header img { width: 100%; height: 100%; object-fit: cover; }
+        .title-header { color: var(--oscuro); font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+
+        .container { display: flex; width: 850px; height: 450px; border-radius: 25px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.15); margin-top: 40px; }
+        .left { flex: 1; background: var(--verde); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+        .right { flex: 1.2; background: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+        
+        .foto-local { width: 150px; height: 150px; background: white; border-radius: 50%; border: 5px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden; }
+        .foto-local img { width: 100%; height: 100%; object-fit: cover; }
+
+        .btn { width: 230px; padding: 16px; margin: 12px; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; font-size: 16px; transition: 0.3s; text-transform: uppercase; }
+        .btn-cli { background: var(--turquesa); color: white; box-shadow: 0 4px 15px rgba(0,168,181,0.3); }
+        .btn-cli:hover { background: #008c96; transform: translateY(-2px); }
+        .btn-adm { background: transparent; border: 2px solid #ccc; color: #999; margin-top: 50px; font-size: 11px; width: 160px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-header"><img src="logo.png" alt="Logo"></div>
+        <div class="title-header">Pet's Grooming</div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="foto-local"><img src="logo.png" alt="Logo"></div>
+            <h1>PET'S GROOMING</h1>
+            <p>ESTÉTICA CANINA PROFESIONAL</p>
+        </div>
+        <div class="right">
+            <h2 style="color: var(--oscuro)">¡BIENVENIDO!</h2>
+            <a href="login_cliente.html" class="btn btn-cli">Entrar / Unirse</a>
+            <a href="empresa.html" class="btn btn-adm">ACCESO PRIVADO</a>
+        </div>
+    </div>
+</body>
+</html>
